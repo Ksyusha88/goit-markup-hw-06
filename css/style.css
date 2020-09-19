@@ -202,6 +202,7 @@ background-size: contain;
     border-radius: 4px;
     font-size: 16px;
     line-height: 30px;
+    border-style: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -687,6 +688,12 @@ img, svg{
     margin-right: 10px;
 }
 
+.icon-send{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
 
 /* Потрфолио */
 .logo-footer {
@@ -714,10 +721,11 @@ img, svg{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50% );
-
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
     width: 528px;
     height: 581px;
-
+    padding: 40px;
     background-color:#FFFFFF;
     
 }
@@ -739,18 +747,183 @@ img, svg{
 
 .icon-close{
     fill:#000000;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+.modal-button:focus .icon-close{
+    fill: #2196F3;
+}
+
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
 }
 
+textarea{
+    resize: none;
+} 
+
 .form-service{
-    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 40px; */
 }
 
+.form-service p{
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+
+.service-input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    /* text-align: left; */
+
+}
+
+.service-input input{
+    
+    width: 100%;
+    margin: 0px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 35px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-input label{
+    margin-bottom: 4px;
+
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 0.85;
+    letter-spacing: 0.01em;
+
+    color: #757575;
+}
+
+.service-input textarea{
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #757575;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-input::placeholder{
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 0.85;
+    letter-spacing: 0.01em;
+ 
+}
+
+.modal-icon{
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-input input:focus,
+.service-input input:focus + .modal-icon {
+    fill: #2196f3;
+    outline-color: #2196F3;
+    
+}
+.service-input textarea:focus{
+    outline-color: #2196F3;
+}
+
+.privacy{
+    position: relative;
+    margin-right: 12px;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.privacy label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    user-select: none;
+}
+
+.privacy a{
+    display: inline-block;
+    color: #2196f3;
+    text-decoration:underline;
+}
+
+.privacy input{
+    -webkit-appearance:none ;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checked {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 13px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+
+.privacy input:checked + .checked{
+    background-color: #2196F3;
+    border-color:#2196F3;
+    /* background-position: center; */
+    background-size: contain;
+    background-image: url(../image/modal-icon/check.svg);
+}
+
+
+
+.button-privacy{
+    margin-top: 30px;
+    border-style: none;
+    padding: 10px 55px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    transform: translateX(60%);
+
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 
 /* Портфолио */
@@ -909,3 +1082,4 @@ img, svg{
 
  .list{
      font-style: normal;}
+

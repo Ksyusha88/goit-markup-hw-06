@@ -301,44 +301,48 @@
             <svg class="icon-close" width="11" height="11"><use href="./image/sprite slose.svg#close-black"></use>
             </svg>
         </button>
+    
+
+    <form class="form-service" >
+        <p>Оставьте свои данные, мы вам перезвоним</p>
+        <div class="service-input">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+            <svg class="modal-icon" widht="12" height="12"><use href="./image/modal-icon/sprite-modal.svg#person-black"></use></svg>
+        </div>
+
+        <div class="service-input">
+            <label for="tell">Телефон</label>
+            <input type="tell" name="tell" id="tell"/>
+            <svg class="modal-icon" widht="12" height="12"><use href="./image/modal-icon/sprite-modal.svg#phone-black"></use></svg>
+        </div>
+
+
+        <div class="service-input">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail"/>
+            <svg class="modal-icon" widht="12" height="12"><use href="./image/modal-icon/sprite-modal.svg#email-black"></use></svg>
+    
+        </div>
+
+        <div class="service-input">
+            <label for="comments">Комментарий</label>
+            <textarea name="comments" id="comments" rows="6" placeholder="Введите текст"></textarea>
+        </div>
+
+        <div class="privacy">
+            <label>
+                Соглашаюсь с рассылкой и принимаю 
+                <a href="">Условия договора</a> 
+                <input class="checkbox" type="checkbox" name="privacy" id="privacy" />
+                <div class="checked"></div>
+            </label>
+        </div>
+
+        <button type="submit" class="button-privacy">Отправить</button>
+
+        </form>
     </div>
-
-<form class="form-service">
-    <p>Оставьте свои данные, мы вам перезвоним</p>
-    <div>
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name"/>
-    </div>
-
-    <div>
-        <label for="tell">Телефон</label>
-        <input type="tell" name="tell" id="tell"/>
-    </div>
-
-    <div>
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail"/>
-    </div>
-
-    <div>
-        <label for="comments">Комментарий</label>
-        <textarea name="comments" id="comments" rows=""></textarea>
-    </div>
-
-    <div>
-        <input type="checkbox" name="privacy" id="privacy"/>
-        <label form="privacy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-    </div>
-
-    <button type="submit" class="button">Отправить</button>
-
-
-
-
-</form>
-
-
-
 </div>
 
 <script src="./js/modal.js"></script>
