@@ -605,7 +605,7 @@ img, svg{
 }
 
 .fotter-position h2{
-    /* text-align:center; */
+    text-align:left;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -662,7 +662,7 @@ img, svg{
     display: block;
     text-decoration: none;
     font-weight: 400;
-    font-size: 14px;
+    ont-size: 14px;
     margin-top: 9px;
 }
 .fotter-adress{
@@ -687,12 +687,79 @@ img, svg{
 .list-social-fot:not(:last-child){
     margin-right: 10px;
 }
+/* Подписка на рассылку */
+
+.subscription{
+    margin-left: 23px;
+}
+
+
+.subscription-form {
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  
+}
+
+.subscription-form input{
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: #FFFFFF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-form::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription-form button{
+    display: flex;
+    margin-left: 12px;
+    padding: 10px 29px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 0.5;
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
 
 .icon-send{
+    /* position: absolute; */
     width: 24px;
     height: 24px;
     margin-left: 10px;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* Потрфолио */
