@@ -859,10 +859,13 @@ textarea{
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-top: 10px;
     /* text-align: left; */
 
 }
+/* .service-input:not(:last-child) {
+    margin-bottom: 10px;
+} */
 
 .service-input input{
     
@@ -965,7 +968,7 @@ textarea{
 .privacy input:checked + .checked{
     background-color: #2196F3;
     border-color:#2196F3;
-    /* background-position: center; */
+    background-position: center;
     background-size: contain;
     background-image: url(../image/modal-icon/check.svg);
 }
@@ -973,7 +976,6 @@ textarea{
 
 
 .button-privacy{
-    margin-top: 30px;
     border-style: none;
     padding: 10px 55px;
 
