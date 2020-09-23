@@ -939,6 +939,9 @@ textarea{
 }
 
 .checkbox label {
+    /* display: flex;
+    justify-content: center; */
+    padding-left: 19px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
